@@ -3,11 +3,11 @@
 
 int main( int argc, char* argv[] ){
     if ( argc == 2 ){
-        char *corrigido_txt, *corrigido_bin;
+        char *corrigido_txt, *corrigido_tmp;
 
-        corrigido_bin = decodificar_texto( ARQ_BIN );
+        corrigido_tmp = decodificar_texto( ARQ_BIN );
 
-        corrigido_txt = BintoASCII( corrigido_bin );
+        corrigido_txt = BintoASCII( corrigido_tmp );
         printf( "Texto decodificado para %s...\n", corrigido_txt );
     
     }
